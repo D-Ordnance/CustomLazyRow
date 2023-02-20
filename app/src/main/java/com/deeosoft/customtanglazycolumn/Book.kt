@@ -93,3 +93,8 @@ class LoggerClass: ComponentActivity(){
         analyticsManager.log(appFlyerLogger,"Open/Close Principle", "Class should be open for extension and close for modification")
     }
 }
+
+
+class CustomException: Exception(){
+
+}

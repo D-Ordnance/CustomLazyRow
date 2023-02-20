@@ -102,7 +102,9 @@ fun NewLazyGaussianRow(items: List<Painter>){
                     }
                 }*/
                 val firstVisibleIndex = lazyRowState.firstVisibleItemIndex
-                if (isEmpty()) -1 else firstVisibleIndex + (last().index - firstVisibleIndex) / 2
+                val index = if (isEmpty()) -1 else firstVisibleIndex + (last().index - firstVisibleIndex) / 2
+                println("Index is $index")
+                index
             }
         }
     }
